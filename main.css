@@ -63,7 +63,7 @@ a:link {
     font-weight: 100;
 }
 body{
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -73,17 +73,17 @@ ul{
 
 
 h1{
-    font-size: 30px;
+    font-size: 45px;
 }
 
 h2{
     padding-top:10px;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 h3{
     padding-top:45px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
