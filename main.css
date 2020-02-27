@@ -1,0 +1,142 @@
+*{
+    /* outline: 2px dashed green; */
+    margin: 0;
+    padding:0;
+}
+/* @media screen and (max-width: 600px) {
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "c"
+        "h"
+        "e"
+        "x";
+}
+ */
+/* step one - build your grid */
+.container {
+    padding:10%;
+    /* height: 100%; */
+    display: grid;
+    grid-gap: 25px;
+    /* this will be  the same for everyone */
+    grid-template-columns: repeat(12, 1fr);
+    /* this will be customized, based on your grid, use pixels or % */
+    grid-template-rows: auto;
+    /* use letters from step 2 to build the grid */
+    grid-template-areas:
+        "h h h h h h c c c c c c"
+        "h h h h h h c c c c c c"
+        "e e e e e e x x x x x x"
+        "e e e e e e x x x x x x";
+}
+li{
+    font-weight: 500;
+    padding:10px;
+}
+a{
+    display:block;
+}
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: rgb(31, 34, 45);
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color:rgb(221, 161, 159);
+  }
+  
+  a:active {
+    text-decoration: underline;
+    
+  }
+.date{
+    font-weight: 300;
+}
+body{
+    font-size: 4em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul{
+    list-style: none;
+}
+
+
+h1{
+    font-size: 120px;
+}
+
+h2{
+    padding-top:25px;
+    font-size: 80px;
+}
+
+h3{
+    padding-top:45px;
+    font-size: 65px;
+}
+
+
+/* step three - build a grid that becomes active when the pixels are 800px or less */
+@media screen and (max-width: 800px) {
+
+    .container{
+        display: grid;
+        grid-gap: 15px;
+        /* grid is only one column, keep this way */
+        grid-template-columns: 1fr;
+        /* you can enter values, or auto will adjust the box sizes based on content */
+        grid-template-rows: auto;
+        grid-template-areas:
+        "c"
+        "h"
+        "x"
+        "s"
+        "e"
+        "f";
+    }
+}
+
+/* step 1 - assign each of your sections a letter */
+.contacts {
+    grid-area: c;
+}
+
+header {
+    grid-area: h;
+
+    
+    
+}
+
+.experience {
+    grid-area: x;
+}
+
+.education {
+    grid-area: e;
+}
+
+
+.icons{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 925px;
+  margin-top: 200px;
+}
+
+img{
+   position: relative;
+   top:50%;
+   transform: translateY(20%);
+}
