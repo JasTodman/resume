@@ -82,11 +82,13 @@ h2{
 }
 
 h3{
-    padding-top:45px;
+    padding-top:30px;
     font-size: 25px;
 }
 
 h4{
+    padding-top: 15px;
+    padding-bottom: 10px;
     font-size: 30px;
 }
 
@@ -132,7 +134,7 @@ header {
 }
 
 
-.icons{
+.picture{
   display: grid;
   grid-template-columns: 1fr;
   margin-left: 925px;
